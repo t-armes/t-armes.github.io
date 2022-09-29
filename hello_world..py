@@ -43,3 +43,94 @@ print(f"Amount of feet i 1000 meters is {km_feet:g}")
 print(f"Amount of yards i 1000 meters is {km_yards:g}")
 print(f"Amount of miles i 1000 meters is {km_miles:g}")
 
+#Exercise 1.5
+#Computing the mass of 1L
+
+#Convert between 1L & g/cm^3
+
+#1L = 1dm^3 = 1000cm^3
+#d = m/V         #density formula, m = mass, V = volume
+#mass = density * volume
+
+iron            = 7.874    #g/cm^3
+air             = 0.001225 #g/cm^3
+gasoline        = 0.75     #g/cm^3
+ice             = 0.92     #g/cm^3
+the_human_body  = 1        #g/cm^3
+silver          = 10.49    #g/cm^3
+platnium        = 21.45    #g/cm^3
+
+print('---------------------------------------------------------')
+print(f"1L of Iron weighs {iron*1000:g}g")
+print(f"1L of Air weighs {air*1000:g}g")
+print(f"1L of Gasoline weighs {gasoline*1000:g}g")
+print(f"1L of Ice weighs {ice*1000:g}g")
+print(f"1L of The Human Body weighs {the_human_body*1000:g}g")
+print(f"1L of Silver weighs {silver*1000:g}g")
+print(f"1L of Platnium weighs {platnium*1000:g}g")
+print('---------------------------------------------------------')
+
+#Exercise 2.1
+#Farenheight to Celcius conversion
+
+print('-------------------------------')
+print(f"|  Farenheight  |   Celcius   |")
+print('-------------------------------')
+
+F = 0       #Celcius begynner i 0 grader
+dF = 10     #Delta C, C øker med 10 grader per løkke
+            #Formel for Farenheight, F = C * 1.8 + 32
+
+while 100 >= F >= 0 :
+    
+    C = (F - 32)/1.8
+    print(f"       {F},          {C:g}")
+    F = F + dF
+    
+    
+print('------------------------------')
+
+#Exercise 2.2
+#Add approx ^C 
+
+C_ = (F - 30)/2     #Aprx C
+print('-----------------------------------------')
+print(f"|  Farenheight  |  Celcius   | Approx C |")
+print('-----------------------------------------')
+
+F = 0
+dF = 10
+
+while 100 >= F >= 0:
+    
+    C = (F - 32)/1.8
+    C_ = (F - 30)/2     #Aprx C
+    print(f"    {F},           {C:g},        {C_:g}")
+    F = F + dF
+    
+print('-----------------------------------------')
+
+#Exercise 2.3
+#Lists, for loops
+
+primes = [2,3,5,7,11,13]
+for element in primes:
+    print(element)
+
+p = 17
+
+primes.append(p)
+print(primes)
+
+# Exercise 2.4
+# Even and Odd
+
+n = -1
+
+while n <= 100:
+    n = n + 2
+    print(n)
+
+
+    
+    
